@@ -22,5 +22,10 @@ public class Auto
             
         }
     }
+     
+    public void setElektrisch(boolean neuElektrisch)
+    { 
+    elektrisch = neuElektrisch;
+    }
     
 }
