@@ -22,10 +22,19 @@ public class Auto
             
         }
     }
-     
-    public void setElektrisch(boolean neuElektrisch)
-    { 
-    elektrisch = neuElektrisch;
+    // Getter
+    public String getMarke()
+    {
+    return marke;
     }
-    
+
+    public int getPs()
+    {
+    return ps;
+    }
+
+    public boolean getElektrisch()
+    {
+    return elektrisch;
+    }
 }
