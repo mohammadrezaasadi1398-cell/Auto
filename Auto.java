@@ -37,4 +37,10 @@ public class Auto
     {
     return elektrisch;
     }
+    public Auto(String neuMarke, int neuPs, boolean neuElektrisch)
+    {
+    marke = neuMarke;
+    setPs(neuPs);
+    elektrisch = neuElektrisch;
+    } 
 }
