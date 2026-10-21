@@ -48,4 +48,17 @@ public class Auto
     {
         return elektrisch;
     }
+    public void printAuto()
+    {
+    System.out.print(marke + ": " + ps + " PS - ");
+
+      if (elektrisch)
+      {
+        System.out.println("ELEKTRISCH");
+      }
+      else
+      {
+        System.out.println("NICHT ELEKTRISCH");
+      }
+    }
 }
