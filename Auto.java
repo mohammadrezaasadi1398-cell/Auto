@@ -1,46 +1,51 @@
 public class Auto
 {
     private String marke = "UNKN";
-    private int ps= 20;
+    private int ps = 20;
     private boolean elektrisch = false;
-    //setter
-    public void setMarke(String neuMarke)
+    
+    public Auto(String neuMarke, int neuPs, boolean neuElektrisch)
     {
-        marke=neuMarke;
+        setMarke(neuMarke);
+        setPs(neuPs);
+        setElektrisch(neuElektrisch);
     }
     
-    public void setPs(int neuPs)
+    public void setMarke(String marke)
     {
-        if(neuPs >=20 && neuPs <=1500)
+        this.marke = marke;
+    }
+    
+    public void setPs(int ps)
+    {
+        if ((ps >= 20) && (ps <= 1500))
         {
-            ps=neuPs;
+            this.ps = ps;
         }
         else
         {
-            System.out.println("Fehler: Ungültige PS!");
-            ps=20;
-            
+            System.out.println("Fehler: ungültige PS!");
+            this.ps = 20;
         }
     }
-    // Getter
+    
+    public void setElektrisch(boolean elektrisch)
+    {
+        this.elektrisch = elektrisch;
+    }
+    
     public String getMarke()
     {
-    return marke;
+        return marke;
     }
-
+    
     public int getPs()
     {
-    return ps;
+        return ps;
     }
-
+    
     public boolean getElektrisch()
     {
-    return elektrisch;
+        return elektrisch;
     }
-    public Auto(String neuMarke, int neuPs, boolean neuElektrisch)
-    {
-    marke = neuMarke;
-    setPs(neuPs);
-    elektrisch = neuElektrisch;
-    } 
 }
